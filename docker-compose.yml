@@ -1,0 +1,9 @@
+name: agent-tools
+services:
+  other:
+    build: ./app
+    restart: always
+    networks: [edge]
+networks:
+  edge:
+    external: true
